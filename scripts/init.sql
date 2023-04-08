@@ -1,0 +1,2 @@
+CREATE TABLE excercises (name TEXT, description TEXT, id INTEGER PRIMARY KEY AUTOINCREMENT);
+CREATE TABLE log (weight INTEGER, reps INTEGER, timestamp INTEGER, excercise_id INTEGER, FOREIGN KEY (excercise_id) REFERENCES excercises(id))
